@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 4.5vmax;
+            color: rgb(115, 115, 237);
+            text-decoration: underline;
+        }
+        div h1{
+            color: rgb(115, 115, 237);
+        }
+        div p{
+            border: 1px solid rgb(159, 159, 230);
+            border-left: 5px solid rgb(159, 159, 230);
+            overflow-wrap:break-word;
+        }
+        p span{
+            color: rgb(115, 115, 237);
+            font-size: x-large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Questions & Answers of mongo db Handson 1 </h1>
+    </header>
+    <div>
+        <% for(let i=0; i < data.length; i++){%>
+            <h1>Q.<%=i+1%> <%= data[i].question %></h1>
+            <p><span>Ans. <%=i+1%></span> <%= data[i].answer %></p>
+        <% }%>
+    </div>
+</body>
+
+</html>
